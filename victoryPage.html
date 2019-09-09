@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Fight</title>
+    <style>
+        @font-face {
+            font-family: 'symtextregular';
+            src: url('./assets/fonts/Symtext.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            cursor: url("./assets/cursor.cur"), auto;
+            justify-content: center;
+            align-items: center;
+            font-family: 'symtextregular';
+            font-weight: bolder;
+            font-size: 50px;
+            
+            
+        }
+        #winner{
+            align-self: center;
+        }
+        
+        #choose{
+            text-align: center;
+            margin-top: 1px;
+            color:white;
+        }
+        #retrybtn:hover{
+            transform: scale(1.1, 1.1);
+        }
+    </style>
+</head>
+<body id="bod" background="./assets/zuckerWinner.png">
+    <br> 
+    <p id="choose" >WINNER WINNER CHICKEN DINNER!!!</br>
+    <br> 
+    <img src="./assets/zuckerberg.png" id="perso_1"/>
+    <br> <br> 
+    <a href="index.html"><img src="./assets/retrybtn.png" id="retrybtn"  width="200px" /></a>
+    <script>
+        if(sessionStorage.getItem('winner') == 'renzo') {
+            document.getElementById("perso_1").src = "./assets/renzo.png";
+            document.getElementById("bod").style.backgroundImage = 'url("./assets/renzoWinner.png")';
+        }
+    </script>
+</body>
+</html>

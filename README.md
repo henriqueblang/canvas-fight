@@ -1,2 +1,1 @@
-# canvas-fight
-2D game written for a hackathon.
+Build Day - Dev Circles

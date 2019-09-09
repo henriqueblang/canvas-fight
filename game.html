@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Fight</title>
+
+    <style>
+        @font-face {
+            font-family: 'symtextregular';
+            src: url('./assets/fonts/Symtext.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./assets/mapaContorno.png");
+            font-family: 'symtextregular';
+            font-weight: bolder;
+        }
+        #myGame {
+            backface-visibility: hidden;
+            background-size: 0%;
+            position: absolute;
+            left: 50px;
+            top: 79px;
+        }
+
+        #track {
+            position: absolute;
+            left: 50px;
+            top: 79px;
+
+            background-image: url("./img/background.png");
+        }
+
+        .slot {
+            height: 135px;
+            width: 123px;
+            border: 0px solid black;
+            margin-left: 4px;
+            margin-top: 67px;
+            background-repeat: no-repeat;
+            background-size: 93%;
+            background-position-y: 3px;
+        }
+
+        #slot1P1 {
+            margin-left: 298px;
+        }
+
+        .score {
+            position: absolute;
+            color: #a40000;
+            margin-top: -31px;
+            font-size: 60px;
+        }
+
+        #s1 {
+            margin-left: 36px;
+        }
+
+        #s2 {
+            margin-top: 46px;
+            margin-left: 36px;
+            color: #3039c0;
+
+        }
+
+        #tempo {
+            margin-top: 344px;
+            font-size: 45px;
+            margin-left: -623px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="track"></canvas>
+    <canvas id="myGame"></canvas>
+
+    <img src="./img/renzo.gif" id="playerRenzo" hidden/>
+    <img src="./img/zucken.gif" id="playerZucken" hidden/>
+    <img src="./img/renzoBackwards.gif" id="playerRenzoBack" hidden/>
+    <img src="./img/zuckenBackwards.gif" id="playerZuckenBack" hidden/>
+
+    <img src="./img/icePowerUp.png" id="icePowerUp" hidden/>
+    <img src="./img/controliPowerUp.png" id="controliPowerUp" hidden/>
+    <img src="./img/starPowerUp.png" id="starPowerUp" hidden/>
+    <img src="./img/slowPowerUp.png" id="slowPowerUp" hidden/>
+
+    <script src="src/index.js"></script>
+
+    <div id="slot1P1" class="slot"></div>
+    <div id="slot2P1" class="slot"></div>
+    <div id="slot1P2" class="slot"></div>
+    <div id="slot2P2" class="slot"></br>
+    <br><br><br><br><br><br>
+    <p id="s1" class="score">Score 1</p>
+    <p id="s2" class="score">Score 2</p>
+
+    <p id="tempo"></p>
+
+</body>
+</html>

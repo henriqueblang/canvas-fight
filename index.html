@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Fight</title>
+    <style>
+        @font-face {
+            font-family: 'symtextregular';
+            src: url('./assets/fonts/Symtext.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            justify-content: center;
+            align-items: center;
+            font-family: 'symtextregular';
+            font-weight: bolder;
+            font-size: 50px;
+            cursor: url("./assets/cursor.cur"), auto;
+            background-image: url("./assets/wallpaper.png");
+            background-repeat: no-repeat;
+        }
+
+
+        #perso_1:hover{
+            transform: scale(1.1, 1.1);
+            
+        }
+        #perso_2:hover{
+            transform: scale(1.1, 1.1);
+        }
+        #perso_1{
+            position: absolute;
+            height: 327px;
+            width: 426px;
+            background-image: url("./assets/mark1.png");
+            margin-left: 160px;
+            margin-right: 70px;
+            font-size: 0px;
+        }
+        #perso_2{
+            position: absolute;
+            height: 327px;
+            width: 426px;
+            background-image: url("./assets/renzo2.png");
+            margin-left: 780px;
+            margin-right: 30px;
+            font-size: 0px;
+        }
+        #choose{
+            text-align: center;
+            margin-top: 1px;
+            color:white;
+            
+        }
+        #playbtn:hover{
+            transform: scale(1.1, 1.1)
+        }
+        #playbtn{
+            margin-top: 330px;
+            margin-left: 577px;
+        }
+    </style>
+</head>
+<body>
+    <p id="choose" >CHOOSE YOUR RUNNER</br>
+    <br> 
+    <div id="perso_1">mark1</div>
+    <div id="perso_2">renzo2</div>
+
+    <a href="game.html"><img src="./assets/playbtn.png" id="playbtn" width="200px"/></a>
+    <script src="./src/firstPageIndex.js"></script>
+</body>
+</html>
